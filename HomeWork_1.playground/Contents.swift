@@ -211,7 +211,7 @@ print("\n")
 
 // MARK: - 7
 
-let score = 61
+let score = 40
 
 switch score {
 case 80...100:
@@ -226,8 +226,10 @@ case 60...64:
     print("Grade C")
 case 55...59:
     print("Grade D+")
-case 50 - 54:
+case 50...54:
     print("Grade D")
+case 0...49:
+    print("Grade F")
 default:
     print("Error, score isn't corrected.")
 }
